@@ -15,5 +15,9 @@ export default {
 
     get export(): boolean {
         return core.getBooleanInput('export');
+    },
+
+    get secret(): boolean {
+        return core.getBooleanInput('secret')
     }
 };
