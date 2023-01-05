@@ -19,6 +19,10 @@ inputs:
       outputs instead.
     required: false
     default: 'true'
+  secret:
+    description: 'Register all parsed envs as secret and will get masked from logs'
+    required: false
+    default: 'false'
 runs:
   using: 'node16'
   main: 'dist/index.js'
