@@ -91,6 +91,9 @@ It means, `${GITHUB_RUN_ATTEMPT}` in a variable value will be substituted by the
 Export variables to a job environment. If `false`, all variables will be set as an action 
 outputs instead.
 
+### 🔹 `secret` Default: `false`
+Register all parsed envs as secret and will get masked from logs
+
 ## Outputs
 
 If `export` is `false` then has an individual output for each variable from env file (where output name equals variable name).
